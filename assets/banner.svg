@@ -1,0 +1,39 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">csv-contract-lint banner</title>
+  <desc id="desc">dark banner for a csv data contract linter</desc>
+  <rect width="1280" height="420" fill="#0d1117"/>
+  <rect x="0" y="0" width="1280" height="420" fill="url(#grid)" opacity="0.42"/>
+  <path d="M0 316 C168 256 276 356 445 297 C627 233 761 280 909 224 C1060 167 1142 186 1280 129 V420 H0 V316Z" fill="#16324f" opacity="0.48"/>
+  <path d="M0 346 C187 295 304 386 485 333 C687 274 824 316 985 256 C1115 207 1204 213 1280 184 V420 H0 V346Z" fill="#1f6feb" opacity="0.22"/>
+  <g transform="translate(92 76)">
+    <rect x="0" y="0" width="196" height="232" rx="20" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <rect x="24" y="34" width="148" height="26" rx="6" fill="#238636"/>
+    <rect x="24" y="82" width="148" height="18" rx="5" fill="#58a6ff" opacity="0.9"/>
+    <rect x="24" y="120" width="86" height="18" rx="5" fill="#f0b429" opacity="0.9"/>
+    <rect x="24" y="158" width="124" height="18" rx="5" fill="#f85149" opacity="0.9"/>
+    <rect x="24" y="196" width="104" height="18" rx="5" fill="#8b949e"/>
+    <path d="M196 50 H280 M196 116 H280 M196 180 H280" stroke="#30363d" stroke-width="2"/>
+    <circle cx="292" cy="50" r="8" fill="#238636"/>
+    <circle cx="292" cy="116" r="8" fill="#58a6ff"/>
+    <circle cx="292" cy="180" r="8" fill="#f85149"/>
+  </g>
+  <g transform="translate(442 92)">
+    <text x="0" y="0" fill="#8b949e" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="700" letter-spacing="2">CSV DATA CONTRACTS</text>
+    <text x="0" y="78" fill="#f0f6fc" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="58" font-weight="800">csv-contract-lint</text>
+    <text x="0" y="126" fill="#c9d1d9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="24">infer contracts from trusted CSV files, then catch drift before it ships</text>
+    <g transform="translate(0 174)">
+      <rect x="0" y="0" width="162" height="40" rx="20" fill="#238636"/>
+      <text x="24" y="26" fill="#ffffff" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="700">schema checks</text>
+      <rect x="180" y="0" width="134" height="40" rx="20" fill="#21262d" stroke="#30363d"/>
+      <text x="204" y="26" fill="#c9d1d9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="700">type drift</text>
+      <rect x="332" y="0" width="138" height="40" rx="20" fill="#21262d" stroke="#30363d"/>
+      <text x="356" y="26" fill="#c9d1d9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="700">ci ready</text>
+    </g>
+  </g>
+  <defs>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" stroke="#30363d" stroke-width="1"/>
+      <circle cx="0" cy="0" r="2.5" fill="#30363d"/>
+    </pattern>
+  </defs>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="920" height="300" viewBox="0 0 920 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">csv-contract-lint terminal output</title>
+  <desc id="desc">static terminal preview showing infer and check commands</desc>
+  <rect width="920" height="300" rx="18" fill="#0d1117"/>
+  <rect x="1" y="1" width="918" height="298" rx="17" stroke="#30363d" stroke-width="2"/>
+  <circle cx="34" cy="32" r="7" fill="#ff5f57"/>
+  <circle cx="58" cy="32" r="7" fill="#ffbd2e"/>
+  <circle cx="82" cy="32" r="7" fill="#28c840"/>
+  <text x="28" y="78" fill="#8b949e" font-family="Fira Code, SFMono-Regular, Consolas, monospace" font-size="18">$ csv-contract-lint infer orders.csv -o orders.contract.json</text>
+  <text x="28" y="116" fill="#3fb950" font-family="Fira Code, SFMono-Regular, Consolas, monospace" font-size="18">wrote contract with 5 columns to orders.contract.json</text>
+  <text x="28" y="166" fill="#8b949e" font-family="Fira Code, SFMono-Regular, Consolas, monospace" font-size="18">$ csv-contract-lint check new-orders.csv -c orders.contract.json</text>
+  <text x="28" y="204" fill="#f85149" font-family="Fira Code, SFMono-Regular, Consolas, monospace" font-size="18">error: row 14: total expected decimal, got string</text>
+  <text x="28" y="242" fill="#f0b429" font-family="Fira Code, SFMono-Regular, Consolas, monospace" font-size="18">csv failed contract</text>
+</svg>
