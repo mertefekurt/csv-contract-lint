@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "csv-contract-lint"
+version = "0.1.0"
+description = "infer and validate lightweight contracts for csv files"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mert Efe Kurt" }]
+keywords = ["csv", "data-quality", "validation", "cli", "contracts"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+csv-contract-lint = "csv_contract_lint.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/csv_contract_lint"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
