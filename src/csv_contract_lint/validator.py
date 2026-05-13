@@ -25,6 +25,7 @@ def validate_csv(
     null_drift: float = 0.15,
     allow_extra_columns: bool = False,
 ) -> ValidationResult:
+    """Validate a CSV file against a saved contract and collect all findings."""
     result = ValidationResult()
     expected_columns = {column["name"]: column for column in contract.get("columns", [])}
     observed_nulls = {name: 0 for name in expected_columns}
@@ -67,6 +68,7 @@ def _validate_row(
     observed_nulls: dict[str, int],
     result: ValidationResult,
 ) -> None:
+    """Validate one data row while tracking null counts for drift checks."""
     for name, column in expected_columns.items():
         value = row.get(name)
         if is_nullish(value):

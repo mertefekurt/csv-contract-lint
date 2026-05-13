@@ -14,6 +14,7 @@ def infer_contract(
     sample_size: int | None = None,
     enum_limit: int = 12,
 ) -> dict[str, Any]:
+    """Infer a lightweight schema contract from a known-good CSV file."""
     path = Path(csv_path)
     with path.open(newline="", encoding="utf-8") as handle:
         reader = csv.DictReader(handle)
@@ -49,6 +50,7 @@ def _new_stats(fieldnames: list[str]) -> dict[str, dict[str, Any]]:
 
 
 def _capture_row(stats: dict[str, dict[str, Any]], row: dict[str, str]) -> None:
+    """Update per-column type, null, and value frequency stats for one CSV row."""
     for name, value in row.items():
         column = stats[name]
         if is_nullish(value):
@@ -61,6 +63,7 @@ def _capture_row(stats: dict[str, dict[str, Any]], row: dict[str, str]) -> None:
 
 
 def _build_column(name: str, stats: dict[str, Any], row_count: int, enum_limit: int) -> dict[str, Any]:
+    """Convert collected column statistics into the persisted contract shape."""
     observed_values = stats["values"]
     non_null_count = stats["non_null_count"]
     null_rate = stats["nulls"] / row_count if row_count else 0

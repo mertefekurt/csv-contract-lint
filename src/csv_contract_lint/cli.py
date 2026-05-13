@@ -4,6 +4,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from typing import Any
 
 from .contract import infer_contract
 from .io import read_json, write_json
@@ -11,6 +12,7 @@ from .validator import validate_csv
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Create the command-line parser and subcommands."""
     parser = argparse.ArgumentParser(
         prog="csv-contract-lint",
         description="infer and validate lightweight csv data contracts",
@@ -66,7 +68,8 @@ def main(argv: list[str] | None = None) -> int:
     return 2
 
 
-def _summary(contract: dict) -> dict:
+def _summary(contract: dict[str, Any]) -> dict[str, Any]:
+    """Return a compact, stable representation for the inspect command."""
     return {
         "source": contract.get("source"),
         "row_count": contract.get("row_count"),
