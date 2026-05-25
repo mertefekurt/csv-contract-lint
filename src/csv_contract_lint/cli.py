@@ -1,3 +1,4 @@
+"""Core utilities for this package."""
 from __future__ import annotations
 
 import argparse
@@ -38,6 +39,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+    """Run the main workflow."""
     args = build_parser().parse_args(argv)
 
     if args.command == "infer":
